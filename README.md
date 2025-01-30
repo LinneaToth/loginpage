@@ -1,5 +1,9 @@
+
 # F25D-Uppgift 1 - Log in page
-First school assignment in first class of FrontEnd Dev education. A simple login page using CSS and HTML Prompt as follows: 
+
+![alt text](https://raw.githubusercontent.com/LinneaToth/loginpage/refs/heads/main/img/preview.png)
+
+First school assignment in first course of frontend/web dev education. A simple responsive login page, using CSS and HTML. 
 
 >## Om uppgiften
 >
