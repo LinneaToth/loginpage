@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F25D-Uppgift 1 - Log in page</title>
+  <link rel="stylesheet" href="loginpage/style.css">
+  <!-- typsnittet quicksand, från google fonts:-->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<!-- Yttre flex container-->
+
+<body>
+  <!-- nästlad flexbox-->
+  <main>
+    <section class="login">
+      <h1>Welcome!</h1>
+      <form>
+        <!-- name användbart när formen sedan ska submittas, ger ett key-value pair -->
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <input type="checkbox" name="rememberMe" class="checkbox">
+        <span>Remember me!</span>
+
+        <button type="submit">login!</button>
+      </form>
+      <h2>new here?</h2>
+      <a href="/signup.html"><button>join us!</button></a>
+    </section>
+
+    <figure class="sidefig">
+      <!-- A container for the nearsighted, but ever so stylish, pug -->
+    </figure>
+  </main>
+  <footer>
+    <strong>Procrastinating Pug Productions</strong> proudly presents:
+    Inlämningsuppgift 1 // Linnéa Toth
+  </footer>
+</body>
+
+</html>
