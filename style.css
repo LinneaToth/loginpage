@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  /* ^För att designen ska fylla hela sidan */
+}
+
+/* Body omsluter allt som finns på sidan, och görs till en (vertikalt orienterad) flex container):*/
+body {
+  background-color: rgb(213, 213, 213);
+  font-family: "Quicksand", serif;
+  color: rgb(20, 20, 20);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Nästlad flexbox, main omsluter loginsektionen och figuren: */
+
+main {
+  display: flex;
+  filter: drop-shadow(3px 3px 5px #35292b25);
+  text-align: center;
+  margin: auto;
+  min-width: 350px;
+}
+
+.login {
+  padding: 100px 75px 100px 75px;
+  background-color: rgb(255, 255, 255);
+  max-width: 400px;
+  min-width: 350px;
+}
+
+.sidefig {
+  background-image: url("img/pug.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 500px;
+}
+
+figure {
+  margin: 0;
+}
+
+/* Formulär och knappar: */
+
+label {
+  display: block;
+  margin: 0px 0px 10px 0px;
+  width: 100%;
+  text-align: left;
+}
+
+input[type="email"],
+input[type="password"] {
+  display: block;
+  height: 40px;
+  border-radius: 15px;
+  border: solid 1px #35292b25;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: 0;
+  border-color: rgb(253, 113, 199);
+}
+
+input:checked {
+  background-color: rgb(253, 113, 199);
+}
+
+button {
+  background-color: rgb(253, 113, 199);
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  font-weight: bolder;
+  font-size: 0.9em;
+  color: white;
+  margin-top: 12px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: white;
+  /* box-shadow: h-offset v-offset blur-radius spread-radius color; */
+  box-shadow: 0rem 0.5rem 0.5rem -0.5rem rgb(253, 113, 199);
+  /*ger en liten förskjutning i y-led*/
+  transform: translate(0, -0.1rem);
+
+}
+
+/* Rubriker: */
+
+h1 {
+  /* 1 rem motsvarar höjden på texten i root element (html), vanligtvis 16px */
+  font-size: 2rem;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+/* Saker som hör till footern: */
+
+footer {
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 3px 3px 5px #35292b25;
+  padding: 10px 0px 10px 20px;
+  min-width: 350px;
+}
+
+/* För att göra sidan responsiv */
+
+@media (max-width: 768px) {
+  figure {
+    display: none;
+  }
+
+  .login {
+    margin: auto;
+  }
+}
