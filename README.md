@@ -1,5 +1,5 @@
 
-# F25D-Uppgift 1 - Log in page
+# F25D - Uppgift 1 - Login page
 
 ![alt text](https://raw.githubusercontent.com/LinneaToth/loginpage/refs/heads/main/img/preview.png)
 
